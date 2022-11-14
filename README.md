@@ -57,7 +57,7 @@ The asked ID and class names are what are important here:
 
 See `js/asked-config.js`
 
-```json
+```
 var quizJSON = {
     "quiz": [
         {
