@@ -24,12 +24,12 @@ var quizJSON = {
                         {
                             "id": 4,
                             "value": "The Flash",
-                            "selected": true
+                            "selected": false
                         },
                         {
                             "id": 5,
                             "value": "Iron Man",
-                            "selected": false
+                            "selected": true
                         },
                         {
                             "id": 6,
