@@ -23,6 +23,7 @@ To initialize your quiz:
 
 #### Text Options
 
+**`textButtonSave`** (String) *Default: '';* - the text to use for the last button the user will click before getting results; if left null/blank (default) - textButtonSave will be used. Example: "Save".
 
 
 #### Functionality Options
