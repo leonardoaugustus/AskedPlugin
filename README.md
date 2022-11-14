@@ -26,10 +26,6 @@ To initialize your quiz:
 **`textButtonSave`** (String) *Default: '';* - the text to use for the last button the user will click before getting results; if left null/blank (default) - textButtonSave will be used. Example: "Save".
 
 
-#### Functionality Options
-
-
-
 #### Question Options
 
 *See "Base Config Options" below for examples*
@@ -39,7 +35,7 @@ To initialize your quiz:
 
 #### Event Options
 
-**`events.onCompleteQuiz`** (function) *Default: empty;* - a function to be executed the quiz has completed; the function will be passed two arguments in an object: <code>options.questionCount</code>, <code>options.score</code>
+**`events.onCompleteQuiz`** (function) *Default: empty;* - a function to be executed the quiz has completed; the function will be passed two arguments in an object: <code>options.ansewer</code>
 
 
 ## Base HTML Structure
