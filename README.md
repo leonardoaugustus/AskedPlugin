@@ -61,7 +61,7 @@ See `js/asked-config.js`
 var quizJSON = {
     "quiz": [
         {
-            "id": 1, <!--- // optional --->   
+            "id": 1, // optional  
             "title": "Examples Questions", // optional
             "required": 0, // optional
             "route": "https://test.com", // optional
