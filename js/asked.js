@@ -255,7 +255,6 @@
 
             submitQuiz = function (quiz_id) {
                 event.preventDefault();
-                alert(quiz_id);
                 var askeds = plugin.method.askedResult(quiz_id);
 
                 if (plugin.config.events && plugin.config.events.onCompleteQuiz) {
