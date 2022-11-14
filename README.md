@@ -6,6 +6,7 @@ See `index.html` for demo and suggested HTML structure (the element class names 
 
 See `js/asked-config.js` to set up your quiz copy and questions.
 
+
 To initialize your quiz:
 
     $(function () {
