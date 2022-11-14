@@ -1,5 +1,7 @@
 A jQuery plugin to create beautiful, dynamic questions with different element type.
 
+![print_screen_AskedPluginJs](https://user-images.githubusercontent.com/62160298/201643039-36618ab0-943b-4165-a191-41de8731c937.png)
+
 ## Demo And Usage
 
 See `index.html` for demo and suggested HTML structure (the element class names are the important part).
