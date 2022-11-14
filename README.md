@@ -57,6 +57,7 @@ The asked ID and class names are what are important here:
 
 See `js/asked-config.js`
 
+```json
 var quizJSON = {
     "quiz": [
         {
@@ -111,5 +112,5 @@ var quizJSON = {
         }
     ]
 }    
-
+```
 Created by [Leonardo Augustus](https://linktr.ee/unitbox) while previously employed at [Unitbox](http://unitbox.com.br), São Paulo, BR.
