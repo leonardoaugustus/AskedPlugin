@@ -87,7 +87,7 @@
 
                     html += "<div class=\"form-group mb-3 px-3\">";
                     html += "<span class=\"h5 fs-0\" for=\"question_" + question.id + "\">" + count_question + ") " + question.title + "</span>";
-                    html += "<textarea type=\"textarea\" class=\"form-control "+regra+"\" name=\"question_" + question.id + "\" rows=\"5\" cols=\"70\"" + required + ">" + (question.value_answer == null ? '' : question.value_answer) + "</textarea>";
+                    html += "<textarea type=\"textarea\" class=\"form-control " + regra + "\" name=\"question_" + question.id + "\" rows=\"5\" cols=\"70\"" + required + ">" + (question.value_answer == null ? '' : question.value_answer) + "</textarea>";
                     html += "</div>";
 
                     return html;
@@ -267,10 +267,19 @@
             }
 
             submitQuiz = function (quiz_id) {
+                var form = $('form[name="form_quiz_' + "_" + quiz_id + '"]')[0];
+
+                // ⬇️ AQUI ESTÁ A CORREÇÃO
+                if (!form.checkValidity()) {
+                    form.reportValidity();
+                    return false;
+                }
+
                 event.preventDefault();
+
                 var askeds = plugin.method.askedResult(quiz_id);
+
                 if (plugin.config.events && typeof plugin.config.events.onCompleteQuiz === 'function') {
-                    // Agora passamos como segundo argumento o quiz_id
                     plugin.config.events.onCompleteQuiz(askeds, quiz_id);
                 }
             }
