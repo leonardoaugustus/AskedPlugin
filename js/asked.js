@@ -10,6 +10,7 @@
  * @license MIT
  */
 
+
 (function ($) {
 
     $.asked = function (element, options) {
